@@ -1,6 +1,5 @@
 # Barcode & QR Code Generator – Functional Documentation
 
-
 ## Website available at
 
 [https://code-hlvarona.pages.dev](https://code-hlvarona.pages.dev)
