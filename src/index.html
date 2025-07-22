@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Códigos de Barras y QR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Generador de Códigos</h1>
+    </header>
+
+    <main>
+      <div class="app-container">
+        <div class="input-section">
+          <label for="dataInput">Contenido a codificar:</label>
+          <input
+            type="text"
+            id="dataInput"
+            placeholder="Introduce texto, URL, número..."
+          />
+
+          <label for="codeTypeSelector">Tipo de código:</label>
+          <select id="codeTypeSelector">
+            <option value="qr">Código QR</option>
+            <option value="code128">Código de Barras (Code128)</option>
+            <option value="ean13">Código de Barras (EAN-13)</option>
+            <option value="code39">Código de Barras (Code39)</option>
+            <option value="upca">Código de Barras (UPC-A)</option>
+            <option value="ean8">Código de Barras (EAN-8)</option>
+            <option value="itf">Código de Barras (ITF)</option>
+            <option value="msi">Código de Barras (MSI)</option>
+            <option value="codabar">Código de Barras (Codabar)</option>
+          </select>
+
+          <button id="generateButton">Generar Código</button>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div class="output-section">
+          <h2>Código Generado:</h2>
+          <div id="outputContainer"></div>
+          <button id="downloadButton" style="display: none">
+            Descargar Imagen
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 HL Varona/VaronaTech.</p>
+    </footer>
+
+    <script src="libs/qrcode.min.js"></script>
+    <script src="libs/JsBarcode.all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
