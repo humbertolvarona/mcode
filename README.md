@@ -1,8 +1,9 @@
 # Barcode & QR Code Generator – Functional Documentation
 
-**Author:** HL Varona
-**Contact:** [humberto.varona@gmail.com](mailto:humberto.varona@gmail.com)
-**License:** MIT
+
+## Website available at
+
+[https://code-hlvarona.pages.dev](https://code-hlvarona.pages.dev)
 
 ---
 
